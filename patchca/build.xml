@@ -10,7 +10,7 @@
 	<property name="jar.file" value="${file.version}.jar"/>
 	<property name="demo.jar.file" value="${file.version}-demo.jar"/>
 	<property name="mf.mainclass" value="org.patchca.demo.PatchcaFilterDemo"/>
-	<property name="mf.classpath" value="${jar.file}"/>
+	<property name="mf.classpath" value="lib/${jar.file}"/>
 
 	<target name="compile">
 		<delete dir="${build.classes.dir}"/>
@@ -36,8 +36,8 @@
 		<delete file="${build.dir}/${demo.jar.file}"/>
 		<delete file="${build.dir}/MANIFEST.MF"/>
 		<manifest file="${build.dir}/MANIFEST.MF">
-			<attribute name="Main-Class" value="${mf.mainclass}"/>
 			<attribute name="Class-Path" value="${mf.classpath}"/>
+			<attribute name="Main-Class" value="${mf.mainclass}"/>
 		</manifest>
 		<jar basedir="${build.dir}/classes" destfile="${build.dir}/${demo.jar.file}" includes="**/demo/**/*.class" manifest="${build.dir}/MANIFEST.MF">
 		</jar>
