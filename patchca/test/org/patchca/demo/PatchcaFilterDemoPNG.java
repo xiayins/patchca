@@ -1,4 +1,4 @@
-package org.patcha.samples;
+package org.patchca.demo;
 
 import java.awt.Color;
 import java.io.FileOutputStream;
@@ -12,8 +12,7 @@ import org.patchca.filter.predefined.WobbleRippleFilterFactory;
 import org.patchca.service.ConfigurableCaptchaService;
 import org.patchca.utils.encoder.EncoderHelper;
 
-
-public class PatchaFilterDemoPNG {
+public class PatchcaFilterDemoPNG {
 
 	public static void main(String[] args) throws Exception {
 		for (int counter = 0; counter < 5; counter++) {

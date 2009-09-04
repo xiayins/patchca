@@ -1,4 +1,4 @@
-package org.patcha.samples;
+package org.patchca.demo;
 
 import java.awt.BorderLayout;
 import java.awt.Button;
@@ -22,15 +22,15 @@ import org.patchca.filter.predefined.MarbleRippleFilterFactory;
 import org.patchca.filter.predefined.WobbleRippleFilterFactory;
 import org.patchca.service.ConfigurableCaptchaService;
 
-public class PatchaFilterDemo extends Frame implements ActionListener {
+public class PatchcaFilterDemo extends Frame implements ActionListener {
 
 	private static final long serialVersionUID = 6698906953413370733L;
 	private BufferedImage img;
 	private Button reloadButton;
 	private int counter;
 
-	public PatchaFilterDemo() {
-		super("Patcha demo");
+	public PatchcaFilterDemo() {
+		super("Patchca demo");
 		setSize(200, 140);
 	    Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
 	    int x = (dim.width-this.getSize().width)/2;
@@ -95,7 +95,7 @@ public class PatchaFilterDemo extends Frame implements ActionListener {
 	}
 
 	public static void main(String[] args) {
-		PatchaFilterDemo f = new PatchaFilterDemo();
+		PatchcaFilterDemo f = new PatchcaFilterDemo();
 		f.setVisible(true);
 	}
 
