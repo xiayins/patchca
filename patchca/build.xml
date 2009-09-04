@@ -6,7 +6,7 @@
 	<property name="build.dir" value="${basedir}/build" />
 	<property name="build.classes.dir" value="${build.dir}/classes" />
 	<property name="version.num" value="0.5.0"/>
-	<property name="file.version" value="patchca${version.num}"/>
+	<property name="file.version" value="patchca-${version.num}"/>
 	<property name="jar.file" value="${file.version}.jar"/>
 	<property name="demo.jar.file" value="${file.version}-demo.jar"/>
 	<property name="mf.mainclass" value="org.patchca.demo.PatchcaFilterDemo"/>
